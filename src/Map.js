@@ -5,7 +5,7 @@ const libraries = ['places'];
 const mapContainerStyle = {
   width: '50vw',
   height: '75vh',
-  margin: '12vh auto'
+  margin: '4vh auto'
 };
 const center = {
   // 42.3601° N, 71.0589° W for Boston
@@ -18,7 +18,6 @@ console.log(SECRET)
 
 const Map = () => {
   const { isLoaded, loadError } = useLoadScript({
-    // googleMapsApiKey: 'AIzaSyCzU8XG3cRB1nd4YdwfmYFCn_hxQmFFKM0',
     googleMapsApiKey: SECRET,
     libraries,
   });
@@ -45,6 +44,3 @@ const Map = () => {
 };
 
 export default Map;
-
-
-// API key: AIzaSyCzU8XG3cRB1nd4YdwfmYFCn_hxQmFFKM0
