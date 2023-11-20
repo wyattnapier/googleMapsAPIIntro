@@ -1,25 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { GoogleMap, useLoadScript, Marker } from '@react-google-maps/api';
+import Map from './Map.js';
+import './App.css'
 
-function App() {
+function App () {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="Container">
+      <h1>Welcome to my website with a map on it</h1>
+      <Map />
+      <p>I hope you enjoyed</p>
     </div>
   );
-}
+};
 
 export default App;
+
+
+// API key: AIzaSyCzU8XG3cRB1nd4YdwfmYFCn_hxQmFFKM0

@@ -1,8 +1,20 @@
-.App {
+* {
+  margin: 0;
   text-align: center;
+  --crayon-blue: rgba(12, 15, 150, 0.7);
+  /* optimally global variable declaration is in :root {}, 
+  but * works in this case too */
 }
 
-.App-logo {
+.Container {
+  background-color: var(--crayon-blue);
+}
+
+p {
+  padding-bottom: 3vh;
+}
+
+/* .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
@@ -35,4 +47,4 @@
   to {
     transform: rotate(360deg);
   }
-}
+} */
