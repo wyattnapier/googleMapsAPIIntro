@@ -10,6 +10,10 @@
   background-color: var(--crayon-blue);
 }
 
-h1, p {
-  padding: 3vh 0;
+h1 {
+  padding-top: 8vh;
+}
+
+p {
+  padding-bottom: 8vh;
 }
