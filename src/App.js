@@ -14,6 +14,3 @@ function App () {
 };
 
 export default App;
-
-
-// API key: AIzaSyCzU8XG3cRB1nd4YdwfmYFCn_hxQmFFKM0

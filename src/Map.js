@@ -8,14 +8,18 @@ const mapContainerStyle = {
   margin: '12vh auto'
 };
 const center = {
-  // 42.3601° N, 71.0589° W
+  // 42.3601° N, 71.0589° W for Boston
   lat: 42.3601, // default latitude
   lng: -71.0589, // default longitude
 };
 
+const SECRET = process.env.REACT_APP_SECRET; 
+console.log(SECRET)
+
 const Map = () => {
   const { isLoaded, loadError } = useLoadScript({
-    googleMapsApiKey: 'AIzaSyCzU8XG3cRB1nd4YdwfmYFCn_hxQmFFKM0',
+    // googleMapsApiKey: 'AIzaSyCzU8XG3cRB1nd4YdwfmYFCn_hxQmFFKM0',
+    googleMapsApiKey: SECRET,
     libraries,
   });
 
